@@ -23,7 +23,16 @@
   </head>
   <body>
     <!--------------------------------------- Navbar----------------------------------- -->
-    <nav class="navbar navbar-expand-lg bg-color navbar-dark text-light py-3 fixed-top">
+    <nav
+      class="
+        navbar navbar-expand-lg
+        bg-color
+        navbar-dark
+        text-light
+        py-3
+        fixed-top
+      "
+    >
       <div class="container">
         <a href="#" class="navbar-brand"> DEMO-WEBSITE-EMAD </a>
         <button
@@ -35,10 +44,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navmenu">
+        <div class="collapse navbar-collapse navset" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#learn" class="nav-link">We Offer</a>
+              <a href="#learn"  class="nav-link">We Offer</a>
             </li>
             <li class="nav-item">
               <a href="#questions" class="nav-link">Questions</a>
@@ -55,7 +64,7 @@
       class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
     >
       <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
+        <div class="d-sm-flex align-items-center justify-content-between offset">
           <div class="">
             <h1>HEALTH <span class="text-warning">IS WEALTH</span></h1>
             <p class="lead my-4">
@@ -209,6 +218,7 @@
     <!---------------------------------------------------- Question-air --------------------->
     <section id="questions" class="p-5">
       <div class="container">
+        <div class="p-3"></div>
         <h2 class="text-center mb-4">Frequestly Asked Questions</h2>
         <div class="accordion accordion-flush" id="questions">
           <!-- Item 1 -->
@@ -390,6 +400,7 @@
 
     <section id="instructors" class="p-5 bg-color">
       <div class="container">
+        <div class="p-3"></div>
         <h2 class="text-center text-white">Our Instructors</h2>
         <p class="lead text-center text-white mb-5">
           Our instructors are certified and have over 4 years professional
@@ -519,47 +530,66 @@
       <div class="container">
         <p class="lead">Copyright &copy; 2021 DEMO-WEBSITE-EMAD</p>
         <a href="" class="position-absolute bottom-0 end-0 p-5">
-          <i class="bi bi-arrow-up-circle h1 "></i>
+          <i class="bi bi-arrow-up-circle h1"></i>
         </a>
       </div>
     </footer>
 
     <!-- Modal -->
-<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="enrollLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p class="lead">Fill out this form and we'll get back to you.</p>
-        <form action="">
-          <div class="mb-3">
-            <label for="first-name" class="col-form-label">First Name:</label>
-            <input type="text" id="first-name" class="form-control">
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div class="mb-3">
-            <label for="last-name" class="col-form-label">Last Name:</label>
-            <input type="text" id="last-name" class="form-control">
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we'll get back to you.</p>
+            <form action="">
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label"
+                  >First Name:</label
+                >
+                <input type="text" id="first-name" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" id="last-name" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="text" id="email" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="text" id="phone" class="form-control" />
+              </div>
+            </form>
           </div>
-          <div class="mb-3">
-            <label for="email" class="col-form-label">Email:</label>
-            <input type="text" id="email" class="form-control">
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn bg-color">Submit</button>
           </div>
-          <div class="mb-3">
-            <label for="phone" class="col-form-label">Phone:</label>
-            <input type="text" id="phone" class="form-control">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
